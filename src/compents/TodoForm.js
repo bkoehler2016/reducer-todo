@@ -24,7 +24,7 @@ const TodoForm = props => {
               setNewTodo("");
             }}
           >
-            Add2
+            Add
           </Button>
         </div>
       </Form>

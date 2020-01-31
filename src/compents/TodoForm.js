@@ -1,5 +1,13 @@
 import React, { useState } from "react";
-import { Button, Form, Input } from "reactstrap";
+import {
+  Col,
+  Button,
+  Form,
+  FormGroup,
+  Label,
+  Input,
+  FormText
+} from "reactstrap";
 
 const TodoForm = props => {
   const [newTodo, setNewTodo] = useState("");
@@ -9,13 +17,21 @@ const TodoForm = props => {
   return (
     <>
       <Form>
-        <Input
-          value={newTodo}
-          onChange={handleChanges}
-          type="text"
-          name="todo"
-          placeholder="Add Todo..."
-        />
+        <FormGroup row>
+          <Label for="todo" sm={2}>
+            Add Todo
+          </Label>
+          <Col sm={10}>
+            <Input
+              value={newTodo}
+              onChange={handleChanges}
+              type="text"
+              name="todo"
+              placeholder="Add Todo..."
+            />
+          </Col>
+        </FormGroup>
+
         <div>
           <Button
             color="primary"

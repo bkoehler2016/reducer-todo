@@ -27,7 +27,6 @@ const TodoForm = props => {
               onChange={handleChanges}
               type="text"
               name="todo"
-              placeholder="Add Todo..."
             />
           </Col>
         </FormGroup>

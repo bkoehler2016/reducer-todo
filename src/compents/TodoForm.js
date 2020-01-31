@@ -1,13 +1,5 @@
 import React, { useState } from "react";
-import {
-  Col,
-  Button,
-  Form,
-  FormGroup,
-  Label,
-  Input,
-  FormText
-} from "reactstrap";
+import { Col, Button, Form, FormGroup, Label, Input } from "reactstrap";
 
 const TodoForm = props => {
   const [newTodo, setNewTodo] = useState("");

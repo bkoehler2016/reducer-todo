@@ -18,6 +18,7 @@ const TodoForm = props => {
         />
         <div>
           <Button
+            color="primary"
             onClick={event => {
               event.preventDefault();
               props.addTodo(newTodo);

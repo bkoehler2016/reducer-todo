@@ -4,7 +4,7 @@ import Todo from "./Todo";
 const TodoList = props => {
   //console.log(props, "todoList");
   return (
-    <div>
+    <div className="todo-list">
       {props.todoState.map(item => {
         //console.log(item, "todoItem");
         return (

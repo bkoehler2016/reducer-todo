@@ -8,20 +8,14 @@ const TodoForm = props => {
   };
   return (
     <>
-      <Form>
-        <FormGroup row>
-          <Label for="todo" sm={2}>
-            Add Todo
-          </Label>
-          <Col sm={10}>
-            <Input
-              value={newTodo}
-              onChange={handleChanges}
-              type="text"
-              name="todo"
-            />
-          </Col>
-        </FormGroup>
+      <form>
+        <Input
+          value={newTodo}
+          onChange={handleChanges}
+          type="text"
+          name="todo"
+          placeholder="Todo..."
+        />
 
         <div>
           <Button
@@ -35,8 +29,9 @@ const TodoForm = props => {
             Add
           </Button>
         </div>
-      </Form>
+      </form>
       <Button
+        color="danger"
         onClick={event => {
           event.preventDefault();
           props.clearCompleted();

@@ -1,9 +1,10 @@
 import React from "react";
+import { Card } from "reactstrap";
 
 const Todo = props => {
   //console.log(props, "props");
   return (
-    <p
+    <Card
       className="todoItem"
       style={
         props.todoItem.completed ? { textDecoration: "line-through" } : null
@@ -14,7 +15,7 @@ const Todo = props => {
       }}
     >
       {props.todoItem.item}
-    </p>
+    </Card>
   );
 };
 

@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #19c2ae;
 }
 
 .App-logo {
@@ -17,7 +18,6 @@ form {
 }
 
 .todoItem {
-  background-color: #19c2ae;
   width: 80%;
   text-align: center;
   margin: auto;
